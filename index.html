@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <!-- font awesome embeded -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
         <!-- reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- css -->
@@ -13,7 +18,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
     </head>
@@ -31,20 +36,20 @@
                     </a>
                     <div class="nav-main">
                         <ul class="nav-menu">
-                            <li class="nav-menu-item">
+                            <li class="nav-menu-item active">
                                 <a href="#">Home</a>
                             </li>
                             <li class="nav-menu-item">
-                                <a href="#!">Features</a>
+                                <a href="#features">Features</a>
                             </li>
                             <li class="nav-menu-item">
-                                <a href="#!">Pricing</a>
+                                <a href="#pricing">Pricing</a>
                             </li>
                             <li class="nav-menu-item">
-                                <a href="#!">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li class="nav-menu-item">
-                                <a href="#!">Contact</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                         <ul class="nav-action">
@@ -60,7 +65,7 @@
             </div>
         </header>
         <!-- main -->
-        <div class="main" style="height: 5000px">
+        <main class="main">
             <!-- Hero -->
             <div class="hero-wrapper">
                 <div class="content hero">
@@ -154,10 +159,10 @@
                 </div>
             </div>
             <!-- features -->
-            <div class="features">
+            <div id="features" class="features">
                 <div class="content">
                     <div class="text-block feature-text">
-                        <span class="before-title">F E A T U R E S</span>
+                        <span class="pre-title">F E A T U R E S</span>
                         <div class="title">
                             We are providing suitable features for students.
                         </div>
@@ -206,7 +211,316 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <footer></footer>
+            <!-- Courses -->
+            <div id="pricing" class="courses-section">
+                <div class="content">
+                    <div class="text-block courses-text">
+                        <span class="pre-title">C O U R S E S</span>
+                        <h3 class="title">Popular Courses</h3>
+                        <div class="courses-desc-section">
+                            <p class="desc courses-desc">
+                                Check out our most poular courses that suit for
+                                you. Here you can find your favourite one.
+                            </p>
+                            <a href="#!" class="courses-more"
+                                >View All Courses</a
+                            >
+                        </div>
+                    </div>
+                    <div class="course-list">
+                        <div class="course-item">
+                            <a href="#!" class="course-img-section">
+                                <img
+                                    src="./assets/imgs/web-design.png"
+                                    alt=""
+                                    class="course-item-img"
+                                />
+                                <div class="img-overlay"></div>
+                            </a>
+                            <div class="course-item-text">
+                                <a href="#!"
+                                    ><h3 class="course-item-title">
+                                        Web Design
+                                    </h3></a
+                                >
+                                <span class="course-item-fee">
+                                    Fee <strong class="fee-number">$250</strong>
+                                </span>
+                                <p class="course-item-desc">
+                                    Web design basic to higer level
+                                </p>
+                                <ul class="course-item-static">
+                                    <li>40 Classes</li>
+                                    <li>3 Months</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <a href="#!" class="course-img-section">
+                                <img
+                                    src="./assets/imgs/web-dev.jpeg"
+                                    alt=""
+                                    class="course-item-img"
+                                />
+                                <div class="img-overlay"></div>
+                            </a>
+                            <div class="course-item-text">
+                                <a href="#!"
+                                    ><h3 class="course-item-title">
+                                        Web Development
+                                    </h3></a
+                                >
+                                <span class="course-item-fee">
+                                    Fee <strong class="fee-number">$250</strong>
+                                </span>
+                                <p class="course-item-desc">
+                                    Web development basic to higer level
+                                </p>
+                                <ul class="course-item-static">
+                                    <li>30 Classes</li>
+                                    <li>3 Months</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <a href="#!" class="course-img-section">
+                                <img
+                                    src="./assets/imgs/web-uiux.jpeg"
+                                    alt=""
+                                    class="course-item-img"
+                                />
+                                <div class="img-overlay"></div>
+                            </a>
+                            <div class="course-item-text">
+                                <a href="#!"
+                                    ><h3 class="course-item-title">
+                                        UI/UX Design
+                                    </h3></a
+                                >
+                                <span class="course-item-fee">
+                                    Fee <strong class="fee-number">$350</strong>
+                                </span>
+                                <p class="course-item-desc">
+                                    UI/UX design basic to higer level
+                                </p>
+                                <ul class="course-item-static">
+                                    <li>50 Classes</li>
+                                    <li>4 Months</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Statistic -->
+            <div class="statistic">
+                <div class="content">
+                    <div class="row">
+                        <div class="column">
+                            <strong class="statistic-number">100+</strong>
+                            <span class="statistic-desc">
+                                Popular Courses
+                            </span>
+                        </div>
+                        <div class="column">
+                            <strong class="statistic-number">500+</strong>
+                            <span class="statistic-desc">
+                                Skilled Trainer
+                            </span>
+                        </div>
+                        <div class="column">
+                            <strong class="statistic-number">1M+</strong>
+                            <span class="statistic-desc">
+                                Student Learning
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- reviewer -->
+            <div class="review">
+                <div class="content">
+                    <div class="row">
+                        <div class="reviewer-quote">
+                            <img
+                                src="./assets/icons/quote.svg"
+                                alt=""
+                                class="quote-icon"
+                            />
+                            <blockquote>
+                                “They are the best people. And this is the
+                                suitable platform to learn from distance.”
+                            </blockquote>
+                            <span class="reviewer-name"
+                                ><b>- Ben Foakes, </b>student.</span
+                            >
+                            <div class="slide-icons">
+                                <i class="fa-solid fa-circle-chevron-left"></i>
+                                <i class="fa-solid fa-circle-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="reviewer-imgs">
+                            <img
+                                src="./assets/imgs/user1.jpeg"
+                                alt=""
+                                class="reviewer-img"
+                            />
+                            <img
+                                src="./assets/imgs/user2.jpeg"
+                                alt=""
+                                class="reviewer-img"
+                            />
+                            <img
+                                src="./assets/imgs/user3.jpeg"
+                                alt=""
+                                class="reviewer-img"
+                            />
+                            <img
+                                src="./assets/imgs/user4.jpeg"
+                                alt=""
+                                class="reviewer-img"
+                            />
+                            <img
+                                src="./assets/imgs/user5.jpeg"
+                                alt=""
+                                class="reviewer-img"
+                            />
+                            <img
+                                src="./assets/imgs/user6.jpeg"
+                                alt=""
+                                class="reviewer-img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cta -->
+            <div class="cta">
+                <div class="content">
+                    <div class="row">
+                        <div class="text-block">
+                            <div class="title">Ready to Get Admit</div>
+                            <div class="desc">
+                                Create your account and Boost your Career.
+                            </div>
+                        </div>
+                        <a href="#!" class="btn cta-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="content">
+                <div class="row">
+                    <div class="column">
+                        <img
+                            src="./assets/icons/logo.svg"
+                            alt=""
+                            class="logo"
+                        />
+                    </div>
+                    <div class="column">
+                        <h3 class="footer-title">Company</h3>
+                        <ul>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link">About</a>
+                            </li>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    >Team Plans</a
+                                >
+                            </li>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    >Become a teacher</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 class="footer-title">Community</h3>
+                        <ul>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    >Twitter</a
+                                >
+                            </li>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    >Careers</a
+                                >
+                            </li>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link">Blog</a>
+                            </li>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    >Teaching academy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 class="footer-title">Teaching</h3>
+                        <ul>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    >Become a teacher</a
+                                >
+                            </li>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    >Teaching academy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 class="footer-title">Be social</h3>
+                        <ul>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    ><img
+                                        src="./assets/icons/twitter.svg"
+                                        alt=""
+                                        class="media-icon"
+                                    /><span>Students</span></a
+                                >
+                            </li>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    ><img
+                                        src="./assets/icons/facebook.svg"
+                                        alt=""
+                                        class="media-icon"
+                                    /><span>Instagram</span></a
+                                >
+                            </li>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    ><img
+                                        src="./assets/icons/instagram.svg"
+                                        alt=""
+                                        class="media-icon"
+                                    /><span>Schoolarships</span></a
+                                >
+                            </li>
+                            <li class="column-item">
+                                <a href="#!" class="column-item-link"
+                                    ><img
+                                        src="./assets/icons/linkedin.svg"
+                                        alt=""
+                                        class="media-icon"
+                                    /><span>Linkedin</span></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copy-right">
+                    © Copyright 2020 by Mayad Ahmed. All right reserved.
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
